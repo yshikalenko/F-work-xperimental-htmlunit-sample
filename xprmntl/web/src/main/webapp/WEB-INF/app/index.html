@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to XPRMTL</title>
+         <link rel="stylesheet" href="../css/styles.css">
+         <script type="text/javascript" src="../js/script.js"></script>
+    </head>
+    <body class="composite">
+        <form action="process">
+            <table>
+                <tr id="_marital_status_row">
+                    <td id="_marital_status_label">Marital Status</td><td id="_marital_status">
+                        <input type="radio" name="marital_status" 
+                            value="single" id="_marital_status_single" onclick="applyMarital(this.value)"/><label for="_marital_status_single">Single</label>
+                        <input type="radio" name="marital_status" 
+                            value="married" id="_marital_status_married" onclick="applyMarital(this.value)"/><label for="_marital_status_married">Married</label>
+                    </td>                    
+                </tr>
+                <tr id="_spouse_name_row" class="hidden">
+                    <td id="_spouse_name_label">Spouse Name</td><td id="_spouse_name">
+                        <input type="text" name="spouse_name" id="_spouse_name"/>
+                    </td>                    
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
